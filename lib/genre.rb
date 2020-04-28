@@ -19,7 +19,7 @@ class Genre
   end
   
   def artists
-    self.all.songs.map do |songinst|
+    self.songs.map do |songinst|
       songinst.artist
     end
   end
